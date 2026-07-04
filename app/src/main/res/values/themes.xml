@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Grupo4_Tarea_16" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/gov_primary</item>
+        <item name="colorPrimaryVariant">@color/gov_primary_dark</item>
+        <item name="colorSecondary">@color/gov_accent</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/gov_background</item>
+        <item name="android:navigationBarColor">@color/gov_background</item>
+    </style>
+
+    <style name="Theme.Grupo4_Tarea_16" parent="Base.Theme.Grupo4_Tarea_16" />
+</resources>

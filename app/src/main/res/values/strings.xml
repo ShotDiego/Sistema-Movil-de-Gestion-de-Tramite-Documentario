@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Smart-Gov Sync</string>
+    <string name="login_title">Smart-Gov Sync</string>
+    <string name="login_subtitle">Gestion movil de tramite documentario - Grupo 4</string>
+    <string name="login_email">Correo institucional</string>
+    <string name="login_password">Contrasena</string>
+    <string name="login_button">Ingresar</string>
+    <string name="demo_credentials">Demo: diego@smartgov.pe / 123456</string>
+    <string name="dashboard_title">Bandeja de tramite</string>
+    <string name="dashboard_subtitle">Offline-first con Room, API REST y sincronizacion publica</string>
+    <string name="sync_now">Sincronizar</string>
+    <string name="logout">Salir</string>
+    <string name="pending_routes">Derivaciones pendientes</string>
+    <string name="status_received">Marcar recibido</string>
+    <string name="status_rejected">Rechazar</string>
+    <string name="map_title">Ubicacion de entrega</string>
+    <string name="map_help">Guarda latitud y longitud en Hoja de Ruta para trazabilidad en campo.</string>
+    <string name="capture_location">Capturar ubicacion</string>
+    <string name="capture_evidence">Tomar foto de evidencia</string>
+    <string name="evidence_ready">Evidencia multimedia guardada en documento ingresado</string>
+    <string name="api_status">Servidor publico</string>
+    <string name="local_status">Base local Room</string>
+    <string name="multimedia_status">Evidencia multimedia</string>
+    <string name="sync_pending">Pendiente</string>
+    <string name="sync_synced">Sincronizado</string>
+    <string name="content_map">Mapa de ubicacion de la hoja de ruta</string>
+</resources>

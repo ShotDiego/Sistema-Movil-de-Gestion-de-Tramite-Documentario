@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gov_background">#F4F7FB</color>
+    <color name="gov_surface">#FFFFFFFF</color>
+    <color name="gov_primary">#165A72</color>
+    <color name="gov_primary_dark">#0E3444</color>
+    <color name="gov_accent">#D89D2B</color>
+    <color name="gov_success">#0B8F69</color>
+    <color name="gov_warning">#D97904</color>
+    <color name="gov_danger">#B42318</color>
+    <color name="gov_text_primary">#17202A</color>
+    <color name="gov_text_secondary">#667085</color>
+    <color name="gov_outline">#D0D8E3</color>
+    <color name="gov_chip_pending">#FFF4E5</color>
+    <color name="gov_chip_synced">#E6F6EF</color>
+</resources>
