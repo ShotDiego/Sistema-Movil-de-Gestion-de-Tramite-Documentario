@@ -2,6 +2,12 @@
 
 Backend publico para la Tarea 16 del Grupo 4.
 
+## URLs
+
+- API publica: https://smart-gov-sync-api.onrender.com
+- Health check: https://smart-gov-sync-api.onrender.com/health
+- Repositorio: https://github.com/ShotDiego/Sistema-Movil-de-Gestion-de-Tramite-Documentario
+
 ## Integrantes
 
 - Asencios Obregon David Imanol
@@ -11,6 +17,7 @@ Backend publico para la Tarea 16 del Grupo 4.
 
 ## Endpoints principales
 
+- `GET /health`
 - `POST /login`
 - `GET /sincronizacion`
 - `POST /sync-data`
@@ -33,6 +40,15 @@ Entidades permitidas:
 - `archivo_fisico`
 - `actas_archivamiento`
 
+## Variables de entorno Render
+
+```text
+DATABASE_URL=connection string de Neon
+JWT_SECRET=grupo4_smart_gov_sync_2026
+JWT_EXPIRES_IN=8h
+NODE_ENV=production
+```
+
 ## Desarrollo local
 
 ```bash
@@ -42,23 +58,25 @@ copy .env.example .env
 npm run dev
 ```
 
-## Deploy recomendado
+## Deploy Render
 
 Usar Neon para PostgreSQL y Render para el Web Service.
 
 1. Crear proyecto en Neon.
-2. Copiar la cadena `DATABASE_URL`.
-3. Ejecutar `backend/sql/schema.sql` en el SQL editor de Neon.
-4. Subir el repositorio a GitHub.
-5. Crear un Web Service en Render conectado al repositorio.
-6. Configurar:
+2. Ejecutar `backend/sql/schema.sql` en el SQL Editor de Neon.
+3. Crear un Web Service en Render conectado al repositorio GitHub.
+4. Configurar:
    - Root Directory: `backend`
    - Build Command: `npm install`
    - Start Command: `npm start`
-   - Environment variable `DATABASE_URL`
-   - Environment variable `JWT_SECRET`
-7. Copiar la URL publica de Render y ponerla en Android `local.properties`:
+5. Agregar variables de entorno.
+6. Desplegar el servicio.
 
-```properties
-API_BASE_URL=https://smart-gov-sync.onrender.com/
+## Prueba de login
+
+```powershell
+Invoke-RestMethod -Uri 'https://smart-gov-sync-api.onrender.com/login' `
+  -Method Post `
+  -ContentType 'application/json' `
+  -Body '{"email":"diego@smartgov.pe","password":"123456"}'
 ```
